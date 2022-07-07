@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for문 - 반복문</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 구구단 2 * 1 = 2 , 2 * 2 = 4.. 2단부터 9단까지
+        // b는 1...9 a는 a*b
+        // 반복 횟수가 더 많을 수록 안쪽에 들어가야 한다.
+
+        for(e=2; e<=9; e++){
+            document.write("<h1>[ "+e+"단 ]</h1>")
+            for(f=1;f<=9;f++){
+                document.write("<p>"+e+"*"+f+"="+e*f+"</p>");
+
+            }
+        }       
+
+
+        // [1] [2] [3] [4] [5] 출력하기
+        for(c=1; c<=5; c++){
+            document.write("<h1>[ "+c+" ]");
+            for(d=1; d<=9; d++){
+                document.write(d);
+            }
+            document.write("</h1>");
+        }
+        // 1부터 10까지 순차연산 (1+2+3+4+5+6+7+8+9+10)..
+        // 결과값: 1부터 10까지의 합은 55이다. 
+        // 0+1=1, 1+2=3, 3+3=6, ... a+b=a
+        var a = 0;
+        for(b=1; b<=10; b++){
+            a=a+b;    
+        }
+        document.write("<p>1부터 10까지의 합은 "+a+"이다.</p>");
+
+        // 변수 처리하는 두 가지 방법
+        for(i=0; i<=5; i++) {
+            document.write("<p>"+(i+1)+". 이 문장을 반복합니다.</p>");
+        }
+        for(j=0; j<=5; j++) {
+            document.write(`<p>${j+1}. 이 문장을 반복합니다.</p>`)
+        }
+    </script>   
+</body>
+</html>

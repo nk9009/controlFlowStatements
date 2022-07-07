@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if문 - 조건문</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var c = prompt("정답은?", "정답 입력");
+
+        if(c == 1) 
+            alert("정답입니다.");
+            document.write("정답");
+        if(c == 2) 
+            alert("정답이 아닙니다.");
+    
+
+
+        // 사용자가 prompt창에 아무런 글자를 입력하지 않았을 때 -> 결과가 왜 반대로 나오는지.. 
+        // 확인 버튼을 누르면 "아이디를 다시 입력해주세요." alert창이 뜨고, "로그인 실패"라고 입력되도록 한다.
+        // 취소 버튼을 누르면 "로그인 취소" alert창이 뜨도록 한다.
+        // var b = prompt("아이디를 입력해주세요", "아이디 입력");
+
+        // if(b == null){
+        //     alert("아이디를 다시 입력해주세요.");
+        //     document.write("로그인 실패");
+        // } else {
+        //     alert("로그인 취소");
+        // }
+        
+
+        // 비밀번호가 1일 경우 로그인 성공
+        // var a = prompt("비밀번호를 입력하세요", "숫자만 입력하세요.");
+
+        // if(a == 1){
+        //     alert("비밀번호가 일치합니다.");
+        //     document.write("로그인 성공");
+        // } else {
+        //     alert("비밀번호가 일치하지 않습니다.");
+        //     document.write("로그인 실패");
+        // }
+    </script>
+</body>
+</html>
